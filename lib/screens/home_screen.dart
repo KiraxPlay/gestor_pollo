@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'engorde/engorde_list_screen.dart';
+import 'ponedoras/ponedoras_list_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -31,8 +32,9 @@ class HomeScreen extends StatelessWidget {
             title: "Ponedoras",
             icon: Icons.egg,
             onTap: () {
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text("en construccion")),
+               Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const PonedorasListScreen()),
               );
             },
           ),
