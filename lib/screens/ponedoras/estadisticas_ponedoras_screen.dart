@@ -11,7 +11,7 @@ class EstadisticasPonedorasScreen extends StatelessWidget {
       ),
       body: const Center(
         child: Text(
-          "Pantalla en construcion 📊",
+          "Pantalla en construcion",
           style: TextStyle(fontSize: 18),
         ),
       ),
